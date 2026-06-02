@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Азат Имаев](https://up.htmlacademy.ru/htmlcss-individual/2/user/492391).
-* Наставник: `Неизвестно`.
+- Студент: [Азат Имаев](https://up.htmlacademy.ru/htmlcss-individual/2/user/492391).
+- Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+- Сайт: [Седона](https://hovki.github.io/492391-sedona-2/).
 
 ---
 
