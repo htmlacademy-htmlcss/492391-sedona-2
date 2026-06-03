@@ -18,7 +18,7 @@
         <a class="headerLogoLink" href="index.html">
           <img
             class="headerLogoImg"
-            src="src/img/sedonaLogo.svg"
+            src="src/img/sedona-logo.svg"
             alt="Седона лого"
             width="140"
             height="70"
@@ -86,16 +86,18 @@
                 <fieldset class="filtersFormAmenities">
                   <legend class="filtersFormTitle">Инфраструктура:</legend>
                   <ul class="filtersFormList">
-                    <label class="filtersFormLabel"
-                      >Бассейн
-                      <input
-                        type="checkbox"
-                        checked
-                        name="pool"
-                        class="filtersFormInput"
-                      />
-                      <span class="filtersFormCheckmark"></span>
-                    </label>
+                    <li>
+                      <label class="filtersFormLabel"
+                        >Бассейн
+                        <input
+                          type="checkbox"
+                          checked
+                          name="pool"
+                          class="filtersFormInput"
+                        />
+                        <span class="filtersFormCheckmark"></span>
+                      </label>
+                    </li>
                     <li class="filtersFormAmenitiesItem">
                       <label class="filtersFormLabel"
                         >Парковка
@@ -205,6 +207,7 @@
                       >
                         <button
                           class="filtersFormPriceRangeToggle filtersFormPriceRangeToggleMin"
+                          type="button"
                         >
                           <span class="visuallyHidden"
                             >Изменить минимальную цену</span
@@ -212,6 +215,7 @@
                         </button>
                         <button
                           class="filtersFormPriceRangeToggle filtersFormPriceRangeToggleMax"
+                          type="button"
                         >
                           <span class="visuallyHidden"
                             >Изменить максимальную цену</span
@@ -264,7 +268,7 @@
                   >
                     <img
                       class="hotelsSortImg"
-                      src="src/img/sortCards.svg"
+                      src="src/img/sort-cards.svg"
                       alt="Сортировка несколькими карточками"
                       width="16"
                       height="14"
@@ -276,7 +280,7 @@
                   <a class="hotelsSortLink" href="catalog.html?view=card">
                     <img
                       class="hotelsSortImg"
-                      src="src/img/sortCard.svg"
+                      src="src/img/sort-card.svg"
                       alt="Сортировка по одной карточке"
                       width="16"
                       height="14"
@@ -288,7 +292,7 @@
                   <a class="hotelsSortLink" href="catalog.html?view=list">
                     <img
                       class="hotelsSortImg"
-                      src="src/img/sortList.svg"
+                      src="src/img/sort-list.svg"
                       alt="Сортировка списком"
                       width="16"
                       height="14"
@@ -306,8 +310,8 @@
               <article class="hotelsListСard">
                 <img
                   class="hotelsListСardImg"
-                  src="src/img/hotelAmara.jpg"
-                  alt=""
+                  src="src/img/hotel-amara.jpg"
+                  alt="Фото с видом из окна отеля"
                   width="300"
                   height="212"
                 />
@@ -349,8 +353,8 @@
               <article class="hotelsListСard">
                 <img
                   class="hotelsListСardImg"
-                  src="src/img/hotelVillas.jpg"
-                  alt=""
+                  src="src/img/hotel-villas.jpg"
+                  alt="Фото с видом из окна отеля"
                   width="300"
                   height="212"
                 />
@@ -392,8 +396,8 @@
               <article class="hotelsListСard">
                 <img
                   class="hotelsListСardImg"
-                  src="src/img/hotelDesert.jpg"
-                  alt=""
+                  src="src/img/hotel-desert.jpg"
+                  alt="Фото с видом из окна отеля"
                   width="300"
                   height="212"
                 />
@@ -435,8 +439,8 @@
               <article class="hotelsListСard">
                 <img
                   class="hotelsListСardImg"
-                  src="src/img/hotelGreenTree.jpg"
-                  alt=""
+                  src="src/img/hotel-green-tree.jpg"
+                  alt="Фото с видом из окна отеля"
                   width="300"
                   height="212"
                 />
@@ -503,10 +507,12 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
+            <label class="visuallyHidden" for="email">Электронная почта:</label>
             <input
               class="subscribeFormInput"
               type="email"
               name="email"
+              id="email"
               placeholder="Ваш e-mail"
               required
             />
