@@ -9,8 +9,8 @@
 @font-face {
   font-family: "PT Sans";
   src:
-    url("../fonts/PTSans-Regular.woff2") format("woff2"),
-    url("../fonts/PTSans-Regular.ttf") format("ttf");
+    url("../fonts/ptsans-regular.woff2") format("woff2"),
+    url("../fonts/ptsans-regular.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -19,8 +19,8 @@
 @font-face {
   font-family: "PT Sans";
   src:
-    url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    url("../fonts/PTSans-Bold.ttf") format("ttf");
+    url("../fonts/ptsans-bold.woff2") format("woff2"),
+    url("../fonts/ptsans-bold.ttf") format("ttf");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -276,14 +276,14 @@ legend {
 }
 
 .headerUserSearch {
-  background: url("../img/searchIcon.svg");
+  background: url("../img/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
 }
 
 .headerUserFavorites {
-  background: url("../img/favoritesIcon.svg");
+  background: url("../img/favorites-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -307,7 +307,8 @@ legend {
 }
 
 .headerUserLinkButton {
-  padding: 8px 34px;
+  padding: 8px 8px;
+  text-align: center;
   color: #ffffff;
   background-color: #756157;
   font-size: 16px;
@@ -315,6 +316,7 @@ legend {
   display: inline-block;
   border-radius: 4px;
   text-transform: uppercase;
+  width: 160px;
 
   &:hover,
   &:focus {
@@ -330,7 +332,7 @@ legend {
 .welcome {
   background-color: #334d57;
   background-image:
-    url("../img/welcomeSeporator.svg"), url("../img/welcomeBackground.jpg");
+    url("../img/welcome-seporator.svg"), url("../img/welcome-background.jpg");
   background-size:
     100% auto,
     cover;
@@ -416,8 +418,12 @@ legend {
   padding-top: 32px;
 }
 
-.advantagesItemPhoto {
+.advantagesItemPhotoWrap {
   grid-column: span 2;
+}
+
+.advantagesItemPhoto {
+  display: block;
 }
 
 .invite {
@@ -446,19 +452,19 @@ legend {
 }
 
 .extraItemHome {
-  background: url("../img/extraHome.svg");
+  background: url("../img/extra-home.svg");
   background-repeat: no-repeat;
   background-position: 164px 80px;
 }
 
 .extraItemFood {
-  background: url("../img/extraFood.svg");
+  background: url("../img/extra-food.svg");
   background-repeat: no-repeat;
   background-position: 164px 80px;
 }
 
 .extraItemSouvenirs {
-  background: url("../img/extraSouvenirs.svg");
+  background: url("../img/extra-souvenirs.svg");
   background-repeat: no-repeat;
   background-position: 168px 80px;
 }
@@ -502,7 +508,7 @@ legend {
 
 .subscribe {
   background-color: #334d57;
-  background-image: url("../img/subscriptionBackground.jpg");
+  background-image: url("../img/subscription-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -566,10 +572,6 @@ legend {
 
 .footerSocialsList {
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  padding: 5px 0;
-  margin: 0; */
 }
 
 .footerSocialsListItem {
@@ -653,7 +655,7 @@ legend {
 
 .catalogHeader {
   background-color: #2b3d47;
-  background-image: url(../img/catalogHeaderBackground.jpg);
+  background-image: url(../img/catalog-header-background.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -709,7 +711,7 @@ legend {
 .breadcrumbsLinkHomeIcon {
   width: 13px;
   height: 15px;
-  background-image: url("../img/homeIcon.svg");
+  background-image: url("../img/home-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -938,6 +940,14 @@ legend {
   -webkit-appearance: none;
   cursor: pointer;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #e5e5e5;
+    outline: 3px solid #83b3d3;
+  }
 }
 
 .filtersFormPriceRangeInput::-webkit-outer-spin-button,
@@ -1002,6 +1012,18 @@ legend {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: 5px 4px 10px 2px #00000040;
+  }
+  &:focus {
+    outline: 3px solid #83b3d3;
+    box-shadow: 5px 4px 10px 2px #00000040;
+  }
+  &:active {
+    outline: 2px solid #83b3d3;
+    box-shadow: 5px 4px 10px 2px #00000066;
+  }
 }
 
 .filtersFormPriceRangeToggleMin {
@@ -1092,7 +1114,7 @@ legend {
 
   &:disabled {
     border-color: #0000004d;
-    background-image: url("../img/arrowDisabled.svg");
+    background-image: url("../img/arrow-disabled.svg");
   }
 }
 
@@ -1431,7 +1453,7 @@ legend {
   padding: 0 46px 0 20px;
   border-radius: 4px;
   background-color: #f2f2f2;
-  background-image: url("../img/calendarIcon.svg");
+  background-image: url("../img/calendar-icon.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: 402px 15px;
@@ -1576,6 +1598,10 @@ legend {
 .modalFormCounterInput::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .modalFormTooltip {
